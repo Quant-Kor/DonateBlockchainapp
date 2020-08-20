@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="ko">
+<meta http-equiv="Content-Type" content="text/html;charset=utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport"
+	  content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no">
+<head>
+	<meta charset="UTF-8">
+	<title>donate</title>
+	<link type="text/css" rel="stylesheet" href="../css/reset.css"/>
+	<link type="text/css" rel="stylesheet" href="../css/style.css"/>
+
+
+</head>
+<body>
+
+<div class="container">
+	<header>
+		<div class="headerWrap">
+			<h1 class="logo">
+				<a href="/">
+					<img src="../img/img_logo.png" alt="로고"/>
+				</a>
+			</h1>
+			<nav>
+				<a href="#none" class="searchBtn"><i class="ic ic_search"></i></a>
+				<a href="#none" class="alarmBtn"><i class="ic ic_alarm"></i></a>
+			</nav>
+		</div>
+	</header>
+
+	<div class="contents">
+		<section class="topTabs">
+			<ul class="tabsList">
+				<li><a href="/page1">자율 장학금</a></li>
+				<li class="on"><a href="/page2-1">크라우드 펀딩</a></li>
+				<li><a href="/page3">마이페이지</a></li>
+			</ul>
+		</section>
+		<section class="funding">
+			<div class="headBox">
+				<div class="toggleBox">
+					<div class="toggleBtnBox">
+						<a href="/page2-1" class="on col_blue">
+							<span class="txt">개인</span>
+						</a>
+						<a href="/page2-2" class="col_pink">
+							<span class="txt">그룹</span>
+						</a>
+					</div>
+				</div>
+				<span class="txt">혁신적 개발로 코로나-19라는<br/>
+사회 문제 해결에 조금이라도 기여를 하고 싶습니다</span>
+				</span>
+			</div>
+
+			<div class="progressGroup">
+
+				<div class="progressBox">
+
+					<div class="progressBar col_blue">
+						<div class="currentIcon" style="left:38%">
+							<div class="currentIconWrap">
+								<span class="txt">38%</span>
+								<span class="ic ic_progress"></span>
+							</div>
+						</div>
+						<div class="currentBar" style="width: 38%"></div>
+					</div>
+					<div class="fundingTxt">400,000</div>
+				</div>
+
+			</div>
+
+			<div class="fundingGroup">
+				<div class="imgBox">
+					<img src="../img/개발장학금.PNG" alt="이미지">
+				</div>
+				<div class="conBox">
+					<div class="labelBox">
+						<span class="label col_pink">20년 09월 12일 마감</span>
+					</div>
+					<div class="titBox">개발지원 개인 크라우드펀딩</div>
+					<div class="textareaBox">
+						블록체인 기반 재난 구호시스템을 만들어<br/>
+						사회적 가치를 실현하고 싶습니다.<br/>
+							기술적 인프라에 관한
+							비용을 지원해 주세요!
+					</div>
+				</div>
+			</div>
+
+			<div class="menuBox">
+				<div class="subMenuBox">
+					<a href="#none" class="subMenuBtn col_pink">
+						<div class="icBox">
+							<span class="ic ic_recommend"></span>
+						</div>
+						<div class="subMenuBtnTxt">추천</div>
+					</a>
+					<a href="#none" class="subMenuBtn col_blue">
+						<div class="icBox">
+							<span class="ic ic_recommend"></span>
+						</div>
+						<div class="subMenuBtnTxt">후기/응원</div>
+					</a>
+
+				</div>
+
+				<a href="/refund" class ="menuBtn col_blue" onclick="window.open('/refund', '_blank', 'width=400px,height=400px,toolbars=no,resizable=no,scrollbars=no'); return false;">환불받기</a>
+				<a href="/receive" class="menuBtn col_pink" onclick="window.open('/receive', '_blank', 'width=400px,height=400px,toolbars=no,resizable=no,scrollbars=no'); return false;">기부금 수령</a>
+
+				<a href="javascript:openWindowPop('/donate', 'popup');" class="menuBtn col_blue">기부하기</a>
+			</div>
+		</section>
+	</div>
+
+</div>
+<script src="../js/jquery-3.1.1.min.js"></script>
+<script src="../js/popup.js"></script>
+
+</body>
+</html>

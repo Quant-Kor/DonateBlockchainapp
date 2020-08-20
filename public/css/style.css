@@ -1,0 +1,545 @@
+/** common components start **/
+html {
+  overflow-y: scroll; }
+
+.container {
+  margin: 0 auto;
+  position: relative;
+  min-height: 100%;
+  max-width: 1080px; }
+
+header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 50; }
+  header .headerWrap {
+    position: relative;
+    text-align: right;
+    max-width: 1080px;
+    margin: 0 auto;
+    border-bottom: 0.1rem solid #f9f9f9;
+    padding: 2.3rem 2.8rem;
+    background-color: #fff; }
+    header .headerWrap h1.logo {
+      position: absolute;
+      left: 2.8rem;
+      top: 50%;
+      transform: translateY(-50%); }
+      header .headerWrap h1.logo a {
+        width: 8.5rem;
+        display: inline-block;
+        vertical-align: middle; }
+        header .headerWrap h1.logo a img {
+          width: 150%; }
+    header .headerWrap nav {
+      display: inline-block;
+      vertical-align: middle;
+      font-size: 0;
+      margin-right: -0.5rem; }
+      header .headerWrap nav a {
+        display: inline-block;
+        vertical-align: middle;
+        padding: 0.5rem;
+        box-sizing: content-box; }
+      header .headerWrap nav .searchBtn {
+        width: 1.4rem;
+        height: 1.5rem; }
+        header .headerWrap nav .searchBtn .ic_search {
+          width: 100%;
+          height: 100%;
+          background: url("../img/ic_header_search.png") no-repeat 100% 100%/contain; }
+      header .headerWrap nav .alarmBtn {
+        width: 1.6rem;
+        height: 1.5rem;
+        margin-left: 1rem; }
+        header .headerWrap nav .alarmBtn .ic_alarm {
+          width: 100%;
+          height: 100%;
+          background: url("../img/ic_header_alarm.png") no-repeat 100%/cover; }
+
+.contents {
+  padding-top: 7.2rem; }
+
+section.topTabs ul.tabsList {
+  border-bottom: 0.1rem solid #f1f1f1;
+  text-align: center;
+  padding: 0 1.9rem;
+  font-size: 0; }
+  section.topTabs ul.tabsList li {
+    display: inline-block;
+    vertical-align: middle;
+    width: calc(33.33% - 3rem);
+    margin: 0 1rem;
+    position: relative; }
+    section.topTabs ul.tabsList li a {
+      display: inline-block;
+      vertical-align: middle;
+      line-height: 4.15rem;
+      width: 100%;
+      font-size: 1.4rem;
+      opacity: 0.3;
+      font-weight: 700; }
+    section.topTabs ul.tabsList li.on a {
+      opacity: 1; }
+    section.topTabs ul.tabsList li.on:after {
+      content: '';
+      position: absolute;
+      left: 0;
+      right: 0;
+      bottom: 1px;
+      background-color: #000;
+      height: 0.2rem; }
+
+section.funding {
+  padding: 5.25rem 6.5rem 0; }
+  section.funding .headBox {
+    padding-bottom: 3.3rem;
+    text-align: center;
+    font-size: 0; }
+    section.funding .headBox .toggleBox {
+      padding-bottom: 1.7rem; }
+      section.funding .headBox .toggleBox .toggleBtnBox {
+        display: inline-block;
+        vertical-align: middle;
+        width: 16rem;
+        font-size: 0;
+        position: relative; }
+        section.funding .headBox .toggleBox .toggleBtnBox:after {
+          content: '';
+          position: absolute;
+          left: 0;
+          right: 0;
+          top: 0;
+          bottom: 0;
+          z-index: 1;
+          border: 1px solid #e0e0e0;
+          border-radius: 1.8rem; }
+        section.funding .headBox .toggleBox .toggleBtnBox a {
+          font-weight: 700;
+          font-size: 1.3rem;
+          line-height: 3.5rem;
+          width: 50%;
+          display: inline-block;
+          vertical-align: middle;
+          position: relative;
+          height: 3.5rem; }
+          section.funding .headBox .toggleBox .toggleBtnBox a .txt {
+            position: absolute;
+            top: 50%;
+            left: 0;
+            width: 100%;
+            transform: translateY(-50%);
+            z-index: 3;
+            color: #a3a3a3; }
+          section.funding .headBox .toggleBox .toggleBtnBox a.on.col_blue:after {
+            background-color: #3190ff; }
+          section.funding .headBox .toggleBox .toggleBtnBox a.on.col_pink:after {
+            background-color: #f97373; }
+          section.funding .headBox .toggleBox .toggleBtnBox a.on:after {
+            display: inline-block;
+            position: absolute;
+            content: '';
+            left: 0;
+            right: 0;
+            bottom: 0;
+            top: 0;
+            border-radius: 1.8rem;
+            color: #fff;
+            z-index: 2; }
+          section.funding .headBox .toggleBox .toggleBtnBox a.on .txt {
+            color: #fff; }
+    section.funding .headBox .comma {
+      vertical-align: bottom;
+      position: relative;
+      top: -0.9rem;
+      width: 0.7rem;
+      height: 1.8rem;
+      display: inline-block; }
+      section.funding .headBox .comma img {
+        width: 100%;
+        height: 100%; }
+    section.funding .headBox .txt {
+      padding: 0 1.1rem;
+      display: inline-block;
+      vertical-align: middle;
+      font-size: 1.8rem;
+      line-height: 3rem; }
+  section.funding .fundingGroup {
+    margin: 0 auto;
+    box-shadow: 0 3px 6px 0 rgba(0, 0, 0, 0.06);
+    border-radius: 1.2rem; }
+    section.funding .fundingGroup .imgBox {
+      background-color: #fcfcfc; }
+      section.funding .fundingGroup .imgBox img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover; }
+    section.funding .fundingGroup .conBox {
+      padding: 1.8rem 1.2rem; }
+      section.funding .fundingGroup .conBox .label {
+        padding: 0 0.3rem;
+        line-height: 1.2rem;
+        font-size: 1rem;
+        color: #fff;
+        display: inline-block;
+        vertical-align: middle; }
+        section.funding .fundingGroup .conBox .label.col_blue {
+          background-color: #3190ff; }
+        section.funding .fundingGroup .conBox .label.col_pink {
+          background-color: #f97373; }
+      section.funding .fundingGroup .conBox .titBox {
+        font-size: 1.2rem;
+        font-weight: 700;
+        padding: 0.8rem 0;
+        line-height: 1.9rem; }
+      section.funding .fundingGroup .conBox .textareaBox {
+        font-size: 1rem;
+        line-height: 1.8rem; }
+  section.funding .progressGroup {
+    padding-bottom: 1.5rem; }
+    section.funding .progressGroup .progressBox .progressBar {
+      border-radius: 0.8rem;
+      width: 100%;
+      background-color: #e9ecf1;
+      height: 0.4rem;
+      position: relative; }
+      section.funding .progressGroup .progressBox .progressBar.col_blue .txt {
+        color: #3190ff; }
+      section.funding .progressGroup .progressBox .progressBar.col_blue .currentBar {
+        background-color: #3190ff; }
+      section.funding .progressGroup .progressBox .progressBar.col_pink .txt {
+        color: #f97373; }
+      section.funding .progressGroup .progressBox .progressBar.col_pink .currentBar {
+        background-color: #f97373; }
+      section.funding .progressGroup .progressBox .progressBar .currentIcon {
+        display: inline-block;
+        vertical-align: middle;
+        position: absolute;
+        top: -1.3rem;
+        transform: translateX(-150%);
+        font-size: 0; }
+        section.funding .progressGroup .progressBox .progressBar .currentIcon .currentIconWrap {
+          position: relative; }
+          section.funding .progressGroup .progressBox .progressBar .currentIcon .currentIconWrap .txt {
+            display: inline-block;
+            vertical-align: middle;
+            vertical-align: bottom;
+            font-size: 0.9rem; }
+          section.funding .progressGroup .progressBox .progressBar .currentIcon .currentIconWrap .ic_progress {
+            position: absolute;
+            right: -2.3rem;
+            top: -1.5rem;
+            vertical-align: bottom;
+            width: 20px;
+            height: 25px;
+            background: url("../img/ic_progress.png") no-repeat center/contain; }
+      section.funding .progressGroup .progressBox .progressBar .currentBar {
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        border-radius: 0.8rem; }
+    section.funding .progressGroup .progressBox .fundingTxt {
+      text-align: right;
+      padding-top: 0.5rem;
+      font-size: 0.9rem; }
+  section.funding .menuBox {
+    margin: 2.1rem 0 0;
+    text-align: right;
+    font-size: 0;
+    position: relative; }
+    section.funding .menuBox .subMenuBox {
+      position: absolute;
+      left: 0;
+      top: 50%;
+      transform: translateY(-50%); }
+      section.funding .menuBox .subMenuBox .subMenuBtn {
+        text-align: center; }
+        section.funding .menuBox .subMenuBox .subMenuBtn + .subMenuBtn {
+          margin-left: 1rem; }
+        section.funding .menuBox .subMenuBox .subMenuBtn.col_pink .icBox {
+          background-color: #f97373; }
+        section.funding .menuBox .subMenuBox .subMenuBtn.col_pink .subMenuBtnTxt {
+          color: #f97373; }
+        section.funding .menuBox .subMenuBox .subMenuBtn.col_blue .icBox {
+          background-color: #3190ff; }
+        section.funding .menuBox .subMenuBox .subMenuBtn.col_blue .subMenuBtnTxt {
+          color: #3190ff; }
+        section.funding .menuBox .subMenuBox .subMenuBtn .icBox {
+          display: inline-block;
+          vertical-align: middle;
+          width: 2.4rem;
+          height: 2.4rem;
+          border-radius: 50%;
+          position: relative; }
+          section.funding .menuBox .subMenuBox .subMenuBtn .icBox .ic_recommend {
+            position: absolute;
+            left: 50%;
+            top: 50%;
+            transform: translate(-50%, -50%);
+            background: url("../img/ic_recommend.png") no-repeat center/cover;
+            width: 0.9rem;
+            height: 1.4rem; }
+        section.funding .menuBox .subMenuBox .subMenuBtn .subMenuBtnTxt {
+          font-size: 0.9rem;
+          padding-top: 0.3rem; }
+    section.funding .menuBox .menuBtn {
+      font-size: 1.3rem;
+      width: 12rem;
+      line-height: 3.4rem;
+      text-align: center;
+      color: #fff;
+      font-weight: 700;
+      border-radius: 3rem; }
+      section.funding .menuBox .menuBtn + .menuBtn {
+        margin-left: 0.9rem; }
+      section.funding .menuBox .menuBtn.col_pink {
+        background-color: #f97373; }
+      section.funding .menuBox .menuBtn.col_blue {
+        background-color: #3190ff; }
+
+section.scholarship {
+  padding: 7.2rem 6.5rem 0; }
+  section.scholarship .headBox {
+    padding-bottom: 3rem;
+    text-align: center;
+    font-size: 0; }
+    section.scholarship .headBox .comma {
+      vertical-align: bottom;
+      position: relative;
+      top: 0.5rem;
+      width: 0.7rem;
+      height: 1.8rem;
+      display: inline-block; }
+      section.scholarship .headBox .comma img {
+        width: 100%;
+        height: 100%; }
+    section.scholarship .headBox .txt {
+      padding: 0 2.2rem;
+      display: inline-block;
+      vertical-align: middle;
+      font-style: italic;
+      font-size: 2.4rem; }
+  section.scholarship .scholarshipInfoGroup {
+    margin: 0 auto;
+    box-shadow: 0 3px 6px 0 rgba(0, 0, 0, 0.06);
+    border-radius: 1.2rem; }
+    section.scholarship .scholarshipInfoGroup .imgBox {
+      background-color: #fcfcfc;
+      padding: 1.1rem 2.6rem 0.95rem; }
+      section.scholarship .scholarshipInfoGroup .imgBox img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover; }
+    section.scholarship .scholarshipInfoGroup .conBox {
+      padding: 1.8rem 1.2rem; }
+      section.scholarship .scholarshipInfoGroup .conBox .label {
+        padding: 0 0.3rem;
+        background-color: #4e4e4e;
+        line-height: 1.2rem;
+        font-size: 1rem;
+        color: #fff;
+        display: inline-block;
+        vertical-align: middle; }
+      section.scholarship .scholarshipInfoGroup .conBox .titBox {
+        font-size: 1.2rem;
+        font-weight: 700;
+        padding: 1.2rem 0; }
+      section.scholarship .scholarshipInfoGroup .conBox .txtBox + .txtBox {
+        padding-top: 0.7rem; }
+      section.scholarship .scholarshipInfoGroup .conBox .txtBox .subject .ic {
+        display: inline-block;
+        vertical-align: middle; }
+      section.scholarship .scholarshipInfoGroup .conBox .txtBox .subject .ic_target {
+        width: 0.8rem;
+        height: 0.9rem;
+        background: url("../img/ic_txt_ic1.png") no-repeat 100% 100%/contain; }
+      section.scholarship .scholarshipInfoGroup .conBox .txtBox .subject .ic_doc {
+        width: 0.9rem;
+        height: 0.9rem;
+        background: url("../img/ic_txt_ic2.png") no-repeat 100% 100%/contain; }
+      section.scholarship .scholarshipInfoGroup .conBox .txtBox .subject .nm {
+        font-size: 1rem;
+        padding-left: 0.35rem;
+        display: inline-block;
+        vertical-align: middle; }
+      section.scholarship .scholarshipInfoGroup .conBox .txtBox .con .txt {
+        padding-top: 0.2rem;
+        line-height: 1.8rem;
+        font-size: 1rem;
+        color: #a3a3a3; }
+  section.scholarship .menuBox {
+    padding-top: 3rem;
+    text-align: center;
+    font-size: 0; }
+    section.scholarship .menuBox .menuBtn {
+      font-size: 1.3rem;
+      width: 11rem;
+      line-height: 3.4rem;
+      text-align: center;
+      color: #fff;
+      font-weight: 700;
+      border-radius: 3rem; }
+      section.scholarship .menuBox .menuBtn + .menuBtn {
+        margin-left: 0.9rem; }
+      section.scholarship .menuBox .menuBtn.col_pink {
+        background-color: #f97373; }
+      section.scholarship .menuBox .menuBtn.col_blue {
+        background-color: #3190ff; }
+
+section.donateHistory {
+  padding: 7.2rem 0 0; }
+  section.donateHistory .headBox {
+    padding-bottom: 3rem;
+    text-align: center;
+    font-size: 0; }
+    section.donateHistory .headBox .profileBox {
+      text-align: center; }
+      section.donateHistory .headBox .profileBox .profileImgBox {
+        display: inline-block;
+        vertical-align: middle;
+        border-radius: 50%;
+        overflow: hidden;
+        width: 6.7rem;
+        height: 6.7rem; }
+        section.donateHistory .headBox .profileBox .profileImgBox img {
+          object-fit: cover;
+          width: 100%;
+          height: 100%; }
+      section.donateHistory .headBox .profileBox .profileNm {
+        padding-top: 1.1rem;
+        font-size: 1.3rem;
+        line-height: 2.3rem; }
+      section.donateHistory .headBox .profileBox .profileEmail {
+        font-size: 1.3rem;
+        line-height: 2.3rem;
+        color: #a3a3a3; }
+      section.donateHistory .headBox .profileBox .donateMenuBox {
+        padding-top: 1.1rem; }
+        section.donateHistory .headBox .profileBox .donateMenuBox a {
+          display: inline-block;
+          vertical-align: middle;
+          color: #a3a3a3;
+          line-height: 2.4rem;
+          text-align: center;
+          width: 8.8rem;
+          border-radius: 1.8rem;
+          border: 1px solid #e0e0e0;
+          font-size: 1.3rem; }
+          section.donateHistory .headBox .profileBox .donateMenuBox a + a {
+            margin-left: 0.6rem; }
+          section.donateHistory .headBox .profileBox .donateMenuBox a.on {
+            border-color: #5280e5;
+            color: #3190ff; }
+  section.donateHistory .historyGroup {
+    position: relative;
+    padding: 6.9rem 2.37rem 0 4.44rem; }
+    section.donateHistory .historyGroup .bgWrap {
+      position: relative; }
+      section.donateHistory .historyGroup .bgWrap .bgBox img {
+        width: 100%;
+        height: 100%; }
+      section.donateHistory .historyGroup .bgWrap .box {
+        position: absolute;
+        display: inline-block;
+        vertical-align: middle;
+        background: url("../img/img_historyBox_off.png") no-repeat center/contain;
+        width: 15%;
+        height: 24%;
+        border-radius: 50%;
+        transform: translateY(-50%); }
+        section.donateHistory .historyGroup .bgWrap .box.on {
+          background: url("../img/img_historyBox_on.png") no-repeat center/contain; }
+        section.donateHistory .historyGroup .bgWrap .box.my .boxWrap:after {
+          content: '';
+          position: absolute;
+          top: -17%;
+          left: 50%;
+          transform: translate(-50%, -50%);
+          width: 58%;
+          height: 58%;
+          background: url("../img/ic_progress.png") no-repeat center/contain; }
+        section.donateHistory .historyGroup .bgWrap .box .boxWrap {
+          position: relative;
+          height: 100%; }
+          section.donateHistory .historyGroup .bgWrap .box .boxWrap .txt {
+            position: absolute;
+            top: 50%;
+            transform: translateY(-40%);
+            left: 0;
+            right: 0;
+            text-align: center;
+            font-size: 1.3rem;
+            font-weight: 900;
+            color: #fff; }
+            section.donateHistory .historyGroup .bgWrap .box .boxWrap .txt.my {
+              font-size: 1.2rem;
+              font-weight: 700; }
+        section.donateHistory .historyGroup .bgWrap .box.box-1 {
+          left: -5%;
+          top: 0%; }
+        section.donateHistory .historyGroup .bgWrap .box.box-2 {
+          left: 15%;
+          top: 0%; }
+        section.donateHistory .historyGroup .bgWrap .box.box-3 {
+          left: 35%;
+          top: 0%; }
+        section.donateHistory .historyGroup .bgWrap .box.box-4 {
+          left: 55%;
+          top: 0%; }
+        section.donateHistory .historyGroup .bgWrap .box.box-7 {
+          left: 15%;
+          top: 51%; }
+        section.donateHistory .historyGroup .bgWrap .box.box-6 {
+          left: 35%;
+          top: 51%; }
+        section.donateHistory .historyGroup .bgWrap .box.box-5 {
+          left: 55%;
+          top: 51%; }
+        section.donateHistory .historyGroup .bgWrap .box.box-8 {
+          left: 15%;
+          top: 98%; }
+        section.donateHistory .historyGroup .bgWrap .box.box-0 {
+          left: 35%;
+          top: 98%; }
+        section.donateHistory .historyGroup .bgWrap .box.box-9 {
+          left: 55%;
+          top: 98%; }
+        section.donateHistory .historyGroup .bgWrap .box.box-10 {
+          left: 75%;
+          top: 98%; }
+    section.donateHistory .historyGroup .menuBox {
+      padding-top: 8.2rem;
+      text-align: right;
+      font-size: 0;
+      padding-right: 0.73rem; }
+      section.donateHistory .historyGroup .menuBox .menuBtn {
+        font-size: 1.1rem;
+        width: 6.4rem;
+        line-height: 2rem;
+        text-align: center;
+        color: #a3a3a3;
+        font-weight: 700;
+        border: 1px solid #e0e0e0; }
+        section.donateHistory .historyGroup .menuBox .menuBtn + .menuBtn {
+          margin-left: 0.9rem; }
+        section.donateHistory .historyGroup .menuBox .menuBtn.col_pink {
+          background-color: #f97373; }
+        section.donateHistory .historyGroup .menuBox .menuBtn.col_blue {
+          background-color: #3190ff; }
+
+@media (min-width: 1080px) {
+  section.scholarship,
+  section.funding {
+    padding-left: 20%;
+    padding-right: 20%;
+    padding-bottom: 10rem; }
+  section.donateHistory .historyGroup .bgWrap .box .boxWrap .txt,
+  section.donateHistory .historyGroup .bgWrap .box .boxWrap .txt.my {
+    font-size: 2.2rem; }
+  section.donateHistory {
+    padding: 7.2rem 20% 10rem; } }
+
+/*# sourceMappingURL=style.css.map */
